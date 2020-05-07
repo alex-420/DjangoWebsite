@@ -1,0 +1,15 @@
+{% extends "posts/post_base.html" %}
+<!--Bootstrap is imported to allow for use in the form-->
+{% load bootstrap4 %}
+<!--The post_content block below is inserted to the base template when called.-->
+{% block post_content %}
+<h4>Create New Post</h4>
+<h5>Post below, markdown is compatible and will be visible to readers.</h5>
+<form method="POST" action="{% url 'posts:create' %}" id="postForm">
+	{% csrf_token %}
+	{% bootstrap_form form %}
+	{% buttons %}
+		<button type="submit" class="btn btn-primary btn-lg active">Post</button>
+	{% endbuttons %}
+</form>
+{% endblock %}

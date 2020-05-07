@@ -1,0 +1,17 @@
+{% extends "forums/forum_base.html" %}
+{% load bootstrap4 %}
+
+{% block forum_content %}
+<div class="container">
+  <h4>Create A New Forum</h4>
+  <h5>Enter a short description of what readers will find in this new forum.</h5>
+  <!--Once posted this method will send the information from the form via a CSRF token to the database for storage.-->
+  <form method="POST" action="{% url 'forums:create' %}" id="forumForm">
+  	{% csrf_token %}
+  	{% bootstrap_form form %}
+    {% buttons %}
+  		<button type="submit" class="btn btn-primary btn-lg active">Create</button>
+  	{% endbuttons %}
+  </form>
+</div>
+{% endblock %}

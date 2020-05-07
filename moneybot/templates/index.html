@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+<!--The content block below is inserted to the base template when called.-->
+{% block content %}
+<div class="container">
+  <h1>Welcome to MoneyBot!</h1>
+</div>
+
+<div class="container">
+  <p>We are an open group of money saving enthusiasts who want to help you with your money and discuss better methods for saving. MoneyBot has been active for a few years now and has steadily grown much to our delight.<p>
+    <p>Currently we are developing a project budget calculator tool to add to the site, this tool can be used to help you budget almost anything once setup. Sadly we are having trouble implementing it on the site without technical difficulties, it will be with you soon!</p>
+  </div>
+  <br>
+  <div class="container">
+    <div class="container">
+      <img class="" src="{% static 'img/home_1.jpg' %}">
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod tellus nec odio gravida dictum. Etiam eleifend massa eget est malesuada malesuada.</p>
+    </div>
+    <div class="container">
+      <img class="" src="{% static 'img/home_2.jpg' %}">
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod tellus nec odio gravida dictum. Etiam eleifend massa eget est malesuada malesuada.</p>
+    </div>
+    <div class="">
+      <img class="" src="{% static 'img/home_3.jpg' %}">
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod tellus nec odio gravida dictum. Etiam eleifend massa eget est malesuada malesuada.</p>
+    </div>
+  </div>
+  {% endblock content %}
