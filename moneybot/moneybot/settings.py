@@ -21,7 +21,7 @@ SECRET_KEY = 't&=eb=%y!h_w-nd#jzf**x7r6i3@*k7xapx5a5zhqy-mscsq1x'
 
 DEBUG = True
 
-ALLOWED_HOSTS = [alexknight1.pythonanywhere.com]
+ALLOWED_HOSTS = []
 
 
 # Application definition, apps used in this project are installed here for use.
